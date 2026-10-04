@@ -1,61 +1,101 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, Jerry"); // задание 1
-
-PrintABC();    // задание 2
-Thread.Sleep(500);
-PrintABC();
-Thread.Sleep(500);
-PrintABC();
-Thread.Sleep(500);
-
-void PrintABC() 
+﻿// Пример 1
 {
-    Console.WriteLine("A");
-    Console.WriteLine("B");
-    Console.WriteLine("C");
+    int a = 5;
+    Console.WriteLine(a);
 }
 
-A();  //задание 3
-A();
-A();
-
-void A()
+// Пример 2
 {
-    Console.WriteLine("Функция A");
-    B();
-    C();
+    int a = 5;
+    int b = 6;
+    a = b;
+    b = 7;
+    Console.WriteLine(a);
 }
 
-void B()
+// Пример 3
 {
-    Console.WriteLine("Функция B");
+    int a = 1;
+    int b = 2;
+    a = b;
+    b = a;
+    Console.WriteLine(a);
+    Console.WriteLine(b);
 }
 
-void C()
+// Пример 4
 {
-    Console.WriteLine("Функция C");
+    int a = 5;
+    int b = a + 6;
+    a = 7;
+    Console.WriteLine(b);
 }
 
-Console.WriteLine("Начало"); // задание 4
-
-void Unused()
+// Пример 5
 {
-    Console.WriteLine("Меня никто не вызвал");
+    int a = 5;
+    int b = a;
+    int c = a + 6;
+    Console.WriteLine(b);
+    Console.WriteLine(c);
 }
 
-Console.WriteLine("Конец");
-
-First(); // задание 5
-
-void First()
+// Пример 6
 {
-    Console.WriteLine("First");
-    Second(); // Second определена ниже, но это работает
+    int a = 5;
+    int c = (a = 7);
+    Console.WriteLine(a);
+    Console.WriteLine(c);
 }
 
-void Second()
+// Пример 7
 {
-    Console.WriteLine("Second");
+    string a = "1";
+    string b = a;
+    a = "2";
+    Console.WriteLine(a);
+    Console.WriteLine(b);
 }
 
-Console.ReadKey();
+// Пример 8 
+// {
+//     string a = 5;
+// }
+
+// Пример 9 
+// {
+//     int a = 5;
+//     int a = 6;
+// }
+
+// Пример 10
+{
+    int a = 5;
+    int A = 6;
+    Console.WriteLine(a);
+    Console.WriteLine(A);
+}
+
+// Пример 11 
+// {
+//     console.WriteLine("Hello");
+// }
+
+// Пример 12
+{
+    var a = 5;
+    Console.WriteLine(a);
+}
+
+// Пример 13 
+// {
+//     var a;
+//     a = 5;
+// }
+
+// Пример 14
+{
+    int a = 5;
+    var b = a + 5;
+    Console.WriteLine(b);
+}
